@@ -5,6 +5,7 @@ branches:
   - master
 init:
   - cmd: git config --global core.autocrlf true
+  - cmd: net start MSSQL$SQL2019
 configuration:
   - Release
 before_build:
