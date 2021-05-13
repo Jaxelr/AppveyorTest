@@ -9,11 +9,12 @@ namespace sqlserver2019buildtest
         [Fact]
         public void AppVeyorTest_Only()
         {
-            var connection = new SqlConnection("Server=(local)\\SQL2019;Database=master;User ID=sa;Password=Password12!");
-            //var connection = new SqlConnection("Server=(local);Database=master;Trusted_Connection=true;");
+            string connectionString = Environment.GetEnvironmentVariable("Sql_Connection");
 
-            Console.WriteLine($"The environment variable Sql_Connection is defined as: {Environment.GetEnvironmentVariable("Sql_Connection")}");
+            Console.WriteLine($"The environment variable Sql_Connection is defined as: {connectionString}");
 
+            var connection = new SqlConnection(connectionString);
+            
             connection.Open();
 
             var command = connection.CreateCommand();
