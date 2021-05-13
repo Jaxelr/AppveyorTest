@@ -1,3 +1,4 @@
+using System;
 using System.Data.SqlClient;
 using Xunit;
 
@@ -10,6 +11,8 @@ namespace sqlserver2019buildtest
         {
             var connection = new SqlConnection("Server=(local)\\SQL2019;Database=master;User ID=sa;Password=Password12!");
             //var connection = new SqlConnection("Server=(local);Database=master;Trusted_Connection=true;");
+
+            Console.WriteLine($"The environment variable Sql_Connection is defined as: {Environment.GetEnvironmentVariable("Sql_Connection")}");
 
             connection.Open();
 
