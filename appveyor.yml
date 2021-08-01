@@ -20,4 +20,4 @@ environment:
   sql_connection:
     secure: IDN3XLRl6oFBvm1ql3udiAXGfdZmk7Ve+EkWfyD6hbANvKgm39j2m+LOtrOXdlBn0l7uh/TENf51P5bNgS/Nn7OoKwXeu1lcMNvLUzx2+MA=
   mysql_connection:
-    secure: JHZerPMEMjDsHWjtYLx7CWy3azfQ51OoKFYeOhHmQjBrJfPllZEzfyYw4DCnoAIFgZAUVeW+2BUWBNM1P0wrv3q+kKm2dfeyPoeNVtpZzsI=
+    secure: JHZerPMEMjDsHWjtYLx7CWy3azfQ51OoKFYeOhHmQjDcRuKhmuZe0pvcFHp+k+5GwLIBqKR+0ZaFTvcF3SazcqNRV+kXMad6frYvPOzdANwdaS95yQvrQZkBKlWGrHi2
