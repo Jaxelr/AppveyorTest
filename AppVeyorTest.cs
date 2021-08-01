@@ -41,7 +41,7 @@ namespace sqlserver2019buildtest
             Console.WriteLine($"The environment variable MySql_Connection is defined as: {connectionString}");
 
             //var connection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
-            var connection = new MySql.Data.MySqlClient.MySqlConnection("Server=127.0.0.1;Port=3306;Database=test;User Id=root;Password=Password12!");
+            var connection = new MySql.Data.MySqlClient.MySqlConnection("Server=127.0.0.1;Port=3306;Database=test;User Id=root;Password=Password12!;SSL Mode=None");
 
             connection.Open();
 
