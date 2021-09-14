@@ -44,4 +44,3 @@ services:
     environment:
       ACCEPT_EULA: 'Y'
       SA_PASSWORD: 'P@ssword123'
-      MSSQL_PID: 'Enterprise'
