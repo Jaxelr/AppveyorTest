@@ -9,9 +9,7 @@ configuration:
   - Release
 before_build:
   - cmd: dotnet --version
-  - cmd: cd /docker
-  - cmd: docker-compose -f docker-compose.yml up -d
-  - cmd: cd ..
+  - cmd: docker-compose -f ./docker/docker-compose.yml up -d
 build_script:
   - cmd: dotnet build . -v quiet
 test_script:
