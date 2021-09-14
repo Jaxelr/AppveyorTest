@@ -8,7 +8,7 @@ services:
 
     # Expose the default Postgres port on localhost
     ports:
-      - '5432:5432'
+      - '5434:5432'
     network_mode: bridge
     container_name: postgres
 
@@ -24,7 +24,7 @@ services:
 
     # Expose the default Mysql port on localhost
     ports:
-    - "3306:3306"
+    - "3308:3306"
     container_name: mysql
 
     environment:
@@ -39,7 +39,7 @@ services:
 
     # Expose the default Sql Server port on localhost
     ports:
-    - "1433:1433"
+    - "1435:1433"
     container_name: sqlserver
 
     environment:

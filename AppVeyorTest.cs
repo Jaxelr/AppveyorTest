@@ -9,7 +9,7 @@ namespace sqlserver2019buildtest
         [Fact]
         public void AppVeyorTest_SqlServer()
         {
-            var connection = new SqlConnection("Server=(local);Database=master;User Id=sa;Password=P@ssword123;Connect Timeout=60;");
+            var connection = new SqlConnection("Server=(local),1435;Database=master;User Id=sa;Password=P@ssword123;Connect Timeout=60;");
 
             connection.Open();
 
@@ -32,7 +32,7 @@ namespace sqlserver2019buildtest
         [Fact]
         public void AppVeyorTest_MySql()
         {
-            var connection = new MySql.Data.MySqlClient.MySqlConnection("Server=127.0.0.1;Port=3306;Database=test;User Id=root;");
+            var connection = new MySql.Data.MySqlClient.MySqlConnection("Server=127.0.0.1;Port=3308;Database=test;User Id=root;");
             
             connection.Open();
 
