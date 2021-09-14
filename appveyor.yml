@@ -5,19 +5,14 @@ branches:
   - master
 init:
   - cmd: git config --global core.autocrlf true
-  - cmd: net start MSSQL$SQL2019
+  - cmd: cd docker 
+  - cmd: docker-compose -f docker-compose.yml up -d
+  - cmd: cd ..
 configuration:
   - Release
-services:
-  - mysql
 before_build:
   - cmd: dotnet --version
 build_script:
   - cmd: dotnet build . -v quiet
 test_script:
   - cmd: dotnet test .
-environment:
-  sql_connection:
-    secure: IDN3XLRl6oFBvm1ql3udiAXGfdZmk7Ve+EkWfyD6hbANvKgm39j2m+LOtrOXdlBn0l7uh/TENf51P5bNgS/Nn7OoKwXeu1lcMNvLUzx2+MA=
-  mysql_connection:
-    secure: JHZerPMEMjDsHWjtYLx7CWy3azfQ51OoKFYeOhHmQjDcRuKhmuZe0pvcFHp+k+5GwLIBqKR+0ZaFTvcF3SazcqNRV+kXMad6frYvPOzdANwdaS95yQvrQZkBKlWGrHi2
