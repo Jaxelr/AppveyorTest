@@ -9,7 +9,7 @@ namespace sqlserver2019buildtest
         [Fact]
         public void AppVeyorTest_SqlServer()
         {
-            var connection = new SqlConnection("Server=127.0.0.1,1435;Database=master;User Id=sa;Password=P@ssword123;Connect Timeout=60;");
+            var connection = new SqlConnection("Server=127.0.0.1,1434;Database=master;User Id=sa;Password=P@ssword123;Connect Timeout=60;");
 
             connection.Open();
 
