@@ -11,6 +11,8 @@ before_build:
   - cmd: dotnet --version
   - cmd: docker-compose -f ./docker/docker-compose.yml up -d
   - cmd: sleep 30
+  - cmd: docker ps -a
+  - cmd: docker logs mysql | tail -n 10
 build_script:
   - cmd: dotnet build . -v quiet
 test_script:
