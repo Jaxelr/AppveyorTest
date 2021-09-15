@@ -10,7 +10,7 @@ configuration:
 before_build:
   - cmd: dotnet --version
   - cmd: docker-compose -f ./docker/docker-compose.yml up -d
-  - cmd: sleep 10
+  - cmd: sleep 30
 build_script:
   - cmd: dotnet build . -v quiet
 test_script:
