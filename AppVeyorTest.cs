@@ -55,7 +55,7 @@ public class AppVeyorTest
     [Fact]
     public void AppVeyorTest_Postgres()
     {
-        var connection = new NpgsqlConnection("Host=localhost;Port=5432;database=postgres;User ID=postgres;Password=postgres");
+        var connection = new NpgsqlConnection("Host=localhost;Port=5434;database=postgres;User ID=postgres;Password=postgres");
 
         connection.Open();
 
